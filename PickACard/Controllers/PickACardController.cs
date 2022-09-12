@@ -8,7 +8,7 @@ namespace PickACard.Controllers
     {
         private string Suit = "", Value = "", Shorthand = "";
 
-        private int CardIndex = Random.Shared.Next(0, 54);
+        private readonly int CardIndex = Random.Shared.Next(0, 55);
 
         [HttpGet("/")]
 
