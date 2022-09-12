@@ -16,49 +16,39 @@ namespace PickACard.Controllers
         {
             if(CardIndex > 51)
             {
-                Suit = "Joker";
-                Value = "Joker";
-                Shorthand = "JJ";
+                Suit = "Joker"; Value = "Joker"; Shorthand = "JJ";
             }
             else
             {
                 switch (CardIndex % 4)
                 {
                     case 0:
-                        Suit = "Spades";
-                        Shorthand = "S";
+                        Suit = "Spades"; Shorthand = "S";
                         break;
                     case 1:
-                        Suit = "Hearts";
-                        Shorthand = "H";
+                        Suit = "Hearts"; Shorthand = "H";
                         break;
                     case 2:
-                        Suit = "Diamonds";
-                        Shorthand = "D";
+                        Suit = "Diamonds"; Shorthand = "D";
                         break;
                     case 3:
-                        Suit = "Clubs";
-                        Shorthand = "C";
+                        Suit = "Clubs"; Shorthand = "C";
                         break;
                 }
 
                 switch (CardIndex % 13)
                 {
                     case 0:
-                        Value = "Ace";
-                        Shorthand += "A";
+                        Value = "Ace"; Shorthand += "A";
                         break;
                     case 10:
-                        Value = "Jack";
-                        Shorthand += "J";
+                        Value = "Jack"; Shorthand += "J";
                         break;
                     case 11:
-                        Value = "Queen";
-                        Shorthand += "Q";
+                        Value = "Queen"; Shorthand += "Q";
                         break;
                     case 12:
-                        Value = "King";
-                        Shorthand += "K";
+                        Value = "King"; Shorthand += "K";
                         break;
                     default:
                         Value = "" + ((CardIndex % 13) + 1);
