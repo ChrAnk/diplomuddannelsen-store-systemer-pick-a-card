@@ -1,6 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using System.Net.NetworkInformation;
-using System.Runtime.CompilerServices;
 
 namespace PickACard.Controllers
 {
